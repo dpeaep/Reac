@@ -20,15 +20,14 @@ namespace Reac
 
       using (var scope = host.Services.CreateScope())
       {
-        var services = scope.ServiceProvider;
         try
         {
-          var context = services.GetRequiredService<DataContext>();
+          var context = scope.ServiceProvider.GetRequiredService<DataContext>();
           context.Database.Migrate();
         }
         catch (Exception ex)
         {
-          var logger = services.GetRequiredService<ILogger<Program>>();
+          var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
           logger.LogError(ex, "An error occured during migration");
         }
       }
