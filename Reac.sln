@@ -15,6 +15,38 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\Persistence.csproj", "{18C01C0F-F55C-4715-820D-325BEEEAB864}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "client-app", "client-app", "{723D9855-3081-4A8E-8948-FA943B8A540F}"
+	ProjectSection(SolutionItems) = preProject
+		client-app\.gitignore = client-app\.gitignore
+		client-app\package-lock.json = client-app\package-lock.json
+		client-app\package.json = client-app\package.json
+		client-app\README.md = client-app\README.md
+		client-app\tsconfig.json = client-app\tsconfig.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0CB0C73E-C253-4726-9510-B9DDD7707FC7}"
+	ProjectSection(SolutionItems) = preProject
+		client-app\src\App.css = client-app\src\App.css
+		client-app\src\App.test.tsx = client-app\src\App.test.tsx
+		client-app\src\App.tsx = client-app\src\App.tsx
+		client-app\src\index.css = client-app\src\index.css
+		client-app\src\index.tsx = client-app\src\index.tsx
+		client-app\src\logo.svg = client-app\src\logo.svg
+		client-app\src\react-app-env.d.ts = client-app\src\react-app-env.d.ts
+		client-app\src\serviceWorker.ts = client-app\src\serviceWorker.ts
+		client-app\src\setupTests.ts = client-app\src\setupTests.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "public", "public", "{C43087D9-B73D-4D5A-9031-4F37573F946E}"
+	ProjectSection(SolutionItems) = preProject
+		client-app\public\favicon.ico = client-app\public\favicon.ico
+		client-app\public\index.html = client-app\public\index.html
+		client-app\public\logo192.png = client-app\public\logo192.png
+		client-app\public\logo512.png = client-app\public\logo512.png
+		client-app\public\manifest.json = client-app\public\manifest.json
+		client-app\public\robots.txt = client-app\public\robots.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +72,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0CB0C73E-C253-4726-9510-B9DDD7707FC7} = {723D9855-3081-4A8E-8948-FA943B8A540F}
+		{C43087D9-B73D-4D5A-9031-4F37573F946E} = {723D9855-3081-4A8E-8948-FA943B8A540F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		    SolutionGuid = {78E52CB3-A922-443E-A58E-C634F02D50FB}
