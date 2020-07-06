@@ -23,10 +23,7 @@ class App extends Component {
             <div>
                 <Header as='h2' icon>
                     <Icon name='users' />
-                    Reactivities
-                    <Header.Subheader>
-                        Manage your account settings and set e-mail preferences.
-                    </Header.Subheader>
+                    <Header.Content>Reactivities</Header.Content>
                 </Header>
                 <List>
                     {this.state.values.map((value: any) => (
