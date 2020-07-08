@@ -24,6 +24,7 @@ namespace Reac
         {
           var context = scope.ServiceProvider.GetRequiredService<DataContext>();
           context.Database.Migrate();
+          Seed.SeedData(context);
         }
         catch (Exception ex)
         {
